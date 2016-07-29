@@ -27,7 +27,7 @@ describe EmployerProfile, "Test seed file" do
       expect(CensusEmployee.all.count).to eq(1000)
     end 
 
-    it "Check Employee create by seed file" do
+    it "Check Carrier profile create by seed file" do
       expect(CarrierProfile.all.count).to eq(50)
     end 
   end
