@@ -152,7 +152,7 @@ puts "::: Mapping Plans to SBC pdfs seed complete :::"
 
 puts "*"*80
 puts "updating cost share variance deductibles"
-system "bundle exec rake serff:update_cost_share_variances"
+# system "bundle exec rake serff:update_cost_share_variances"
 puts "updating cost share variance deductibles complete"
 puts "*"*80
 
