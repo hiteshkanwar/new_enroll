@@ -164,7 +164,12 @@ puts "*"*80
 
 puts "*"*80
 puts "End of Seed Data"
-
+user = User.where(email: "admin@dc.gov")[0]
+if !user.nil?
+  user.password = "Test123!"
+  user.password_confirmation = "Test123!"
+  user.save(validate: false)
+end
 system "bundle exec rake broker:employer"
 
 puts "End of Seed Data"
